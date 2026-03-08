@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQs | Gooey</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<div class="page-background">
+
+<nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">GOOEY</a>
+    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="flavor-guide.html">Flavor Guide</a></li>
+        <li class="nav-item"><a class="nav-link active" href="faq.html">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Special</a>
+          <ul class="dropdown-menu border-0 shadow">
+            <li><a class="dropdown-item" href="dubai-signature.html">Best Sellers</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container faq-container py-4">
+  <section>
+    <h2 class="mb-4">Frequently Asked Questions</h2>
+
+    <button class="accordion">What is Dubai Chewy Chocolate?</button>
+    <div class="panel"><p>Dubai Chewy Chocolate is a rich dessert made with toasted Kataifi pastry and marshmallow, finished with premium cocoa or unique flavors such as Biscoff and Matcha.</p></div>
+
+    <button class="accordion">How can I place an order?</button>
+    <div class="panel"><p>You can place an order through our <a href="order.html">Order Page</a> or contact us directly via our Contact page.</p></div>
+
+    <button class="accordion">Do you deliver locally and internationally?</button>
+    <div class="panel"><p>Currently, we offer local delivery so you can enjoy your treats fresh. We are working to expand our reach internationally.</p></div>
+
+    <button class="accordion">What flavors do you offer?</button>
+    <div class="panel">
+      <ul>
+        <li>Original</li>
+        <li>Biscoff</li>
+        <li>Strawberry Chocolate</li>
+        <li>Matcha Pistachio</li>
+      </ul>
+    </div>
+
+    <button class="accordion">How should I store my dessert?</button>
+    <div class="panel"><p>Store in a cool, dry place. Refrigeration is recommended if keeping for more than 24 hours.</p></div>
+
+    <div class="message-box mt-4">
+      <h3>Have a different question?</h3>
+      <form id="faqForm">
+        <input class="form-control mb-2" type="text" placeholder="Your Name" required>
+        <input class="form-control mb-2" type="email" placeholder="Your Email" required>
+        <textarea class="form-control mb-2" rows="4" placeholder="Your Question" required></textarea>
+        <button class="btn btn-dark w-100">Submit Question</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+<footer class="text-center py-4">
+  <div class="footer-links mb-2">
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="menu.html">Menu</a> |
+    <a href="flavor-guide.html">Flavor Guide</a> |
+    <a href="faq.html">FAQs</a> |
+    <a href="order.html">Order</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="dubai-signature.html">Best Sellers</a>
+  </div>
+  <p>Developed by Julia Tidalgo & Antonet Rillera</p>
+  <p style="opacity:0.5;font-size:10px;">© 2026 Gooey Cookie Co.</p>
+</footer>
+
+<script>
+const acc = document.querySelectorAll(".accordion");
+acc.forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("active");
+    const panel = btn.nextElementSibling;
+    panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+  });
+});
+
+document.getElementById("faqForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("Thank you! Your question has been submitted.");
+  this.reset();
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+</body>
+</html>

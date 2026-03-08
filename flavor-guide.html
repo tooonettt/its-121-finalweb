@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flavor Guide | Gooey</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page-background">
+
+      
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GOOEY</a>
+                <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="flavor-guide.html">Flavor Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Special</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item" href="dubai-signature.html">Best Sellers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="hero">
+                <h1>Flavor Guide</h1>
+            </header>
+        <div class="container mt-5">
+            <div class="row g-4 justify-content-center">
+
+                <!-- Original -->
+                <div class="col-6 col-md-4 col-lg-3 flavor-card">
+                    <div class="card h-100">
+                        <img src="./images/original.png" class="card-img-top" alt="The Original">
+                        <button class="stretched-link border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalOriginal"></button>
+                        <div class="card-overlay">
+                            <h5>The Original</h5>
+                            <p class="small">Tap for Details</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Biscoff -->
+                <div class="col-6 col-md-4 col-lg-3 flavor-card">
+                    <div class="card h-100">
+                        <img src="./images/biscoff.png" class="card-img-top" alt="Biscoff">
+                        <button class="stretched-link border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalBiscoff"></button>
+                        <div class="card-overlay">
+                            <h5>Biscoff Speculoos</h5>
+                            <p class="small">Tap for Details</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Strawberry -->
+                <div class="col-6 col-md-4 col-lg-3 flavor-card">
+                    <div class="card h-100">
+                        <img src="./images/strawberry_chocolate.png" class="card-img-top" alt="Strawberry">
+                        <button class="stretched-link border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalStrawberry"></button>
+                        <div class="card-overlay">
+                            <h5>Chocolate Strawberry</h5>
+                            <p class="small">Tap for Details</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matcha Pistachio -->
+                <div class="col-6 col-md-4 col-lg-3 flavor-card">
+                    <div class="card h-100">
+                        <img src="./images/matcha_pistachio.png" class="card-img-top" alt="Matcha">
+                        <button class="stretched-link border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalMatcha"></button>
+                        <div class="card-overlay">
+                            <h5>Matcha Pistachio</h5>
+                            <p class="small">Tap for Details</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <!-- Original -->
+        <div class="modal fade" id="modalOriginal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">The Original</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./images/original.png" class="img-fluid rounded mb-3" style="max-height: 250px;">
+                        <p>A decadent dark chocolate shell filled with crunchy toasted kataifi pastry and rich pistachio cream.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Biscoff -->
+        <div class="modal fade" id="modalBiscoff" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Biscoff Speculoos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./images/biscoff.png" class="img-fluid rounded mb-3" style="max-height: 250px;">
+                        <p>Infused with caramelized biscuit flavor and a spiced cookie butter filling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chocolate Strawberry -->
+        <div class="modal fade" id="modalStrawberry" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Chocolate Strawberry</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./images/strawberry_chocolate.png" class="img-fluid rounded mb-3" style="max-height: 250px;">
+                        <p>Velvet chocolate with a crisp kataifi center and a juicy strawberry heart.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matcha Pistachio -->
+        <div class="modal fade" id="modalMatcha" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Matcha Pistachio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./images/matcha_pistachio.png" class="img-fluid rounded mb-3" style="max-height: 250px;">
+                        <p>Vibrant matcha shell with premium pistachio kunafa filling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-links mb-2">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="menu.html">Menu</a> |
+                <a href="flavor-guide.html">Flavor Guide</a> |
+                <a href="faq.html">FAQs</a> |
+                <a href="order.html">Order</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="dubai-signature.html">Best Sellers</a>
+            </div>
+            <p>Developed by Julia Tidalgo & Antonet Rillera</p>
+            <p>© 2026 Gooey Cookie Co.</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

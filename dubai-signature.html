@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Best Sellers | Gooey</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="page-background">
+
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">GOOEY</a>
+
+                <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="flavor-guide.html">Flavor Guide</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="order.html">Order</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Special</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li>
+                                    <a class="dropdown-item" href="dubai-signature.html">Best Sellers</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="main-content">
+
+            <section class="container text-center mt-5 mb-4">
+                <h1 class="title text-center">Best Sellers</h1>
+                <p>Discover Gooey's most loved cookies</p>
+            </section>
+
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-6 flavor-card">
+                        <div class="card h-100">
+                            <img src="./images/original.png" class="card-img-top" alt="Original">
+                            <button class="stretched-link border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalOriginal"></button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 flavor-card">
+                        <div class="card h-100">
+                            <img src="./images/matcha_pistachio.png" class="card-img-top" alt="Matcha Pistachio">
+                            <button class="stretched-link border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#modalMatcha"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade cookie-modal" id="modalOriginal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content custom-cookie-modal">
+
+                        <button type="button" class="custom-close" data-bs-dismiss="modal">&times;</button>
+
+                        <div class="modal-body text-center">
+
+                            <img src="./images/original.png" class="cookie-modal-img" alt="Original Cookie">
+
+                            <h3 class="cookie-title mt-4">The Original</h3>
+
+                            <p class="cookie-desc">
+                                A rich cookie inspired by Middle Eastern flavors with crunchy kunafa strands.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade cookie-modal" id="modalMatcha" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content custom-cookie-modal">
+
+                        <button type="button" class="custom-close" data-bs-dismiss="modal">&times;</button>
+
+                        <div class="modal-body text-center">
+
+                            <img src="./images/matcha_pistachio.png" class="cookie-modal-img" alt="Matcha Cookie">
+
+                            <h3 class="cookie-title mt-4">Matcha Pistachio</h3>
+
+                            <p class="cookie-desc">
+                                A rich, chewy cookie infused with premium matcha and filled with creamy pistachio goodness. Its earthy matcha flavor perfectly balances the sweet, nutty center—making it a unique and irresistible treat for matcha lovers.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="footer-links mb-2">
+                <a href="index.html">Home</a> |
+                <a href="about.html">About</a> |
+                <a href="menu.html">Menu</a> |
+                <a href="flavor-guide.html">Flavor Guide</a> |
+                <a href="faq.html">FAQs</a> |
+                <a href="order.html">Order</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="dubai-signature.html">Best Sellers</a>
+            </div>
+
+            <p>Developed by Julia Tidalgo & Antonet Rillera</p>
+            <p>© 2026 Gooey Cookie Co.</p>
+
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order | Gooey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="page-background">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark custom-nav sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GOOEY</a>
+                <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="flavor-guide.html">Flavor Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faq.html">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="order.html">Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Special</a>
+                            <ul class="dropdown-menu border-0 shadow">
+                                <li><a class="dropdown-item" href="dubai-signature.html">Best Sellers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <header class="hero">
+            <h1>Place Your Order</h1>
+        </header>
+
+        <!-- ORDER FORM -->
+        <div class="container order-container order-form">
+            <form id="orderForm">
+                <div class="row g-2">
+                    <div class="col-md-4">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="phone-input">
+                            <span>+63</span>
+                            <input type="tel" name="contact" placeholder="9123456789" required pattern="9\d{9}"
+                                maxlength="10" title="Enter a 10-digit number starting with 9">
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Flavors & Quantity</h3>
+                <table class="flavor-table">
+                    <thead>
+                        <tr>
+                            <th>Flavor</th>
+                            <th>Qty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Original – ₱140</td>
+                            <td><input type="number" name="original" value="0" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Biscoff – ₱150</td>
+                            <td><input type="number" name="biscoff" value="0" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Strawberry Chocolate – ₱155</td>
+                            <td><input type="number" name="strawberry" value="0" min="0"></td>
+                        </tr>
+                        <tr>
+                            <td>Matcha Pistachio – ₱165</td>
+                            <td><input type="number" name="matcha" value="0" min="0"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 class="section-title">Mode of Payment</h3>
+                <select name="mop" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="gcash">GCash</option>
+                    <option value="bank">Bank Transfer</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+                <textarea name="notes" rows="3" placeholder="Additional notes or requests"></textarea>
+
+                <h4>Total: ₱<span id="total">0</span></h4>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="container">
+            <section class="reviews-section">
+                <h2>What Our Customers Say</h2>
+                <div class="reviews-container">
+                    <div class="review-card">
+                        <h3>Ria Batumbakal</h3>
+                        <p>The Dubai Chocolate is absolutely divine! The balance of textures—the crunchy
+                            Kataifi and soft marshmallow—is unlike anything I've tasted. I ordered a dozen and
+                            everyone was raving!</p>
+                    </div>
+                    <div class="review-card">
+                        <h3>Jeon Jungkook</h3>
+                        <p>I tried the Biscoff flavor and was blown away. The flavors are perfectly blended, and
+                            the presentation is stunning. The desserts arrived fresh and everyone at my party
+                            loved them.</p>
+                    </div>
+                    <div class="review-card">
+                        <h3>Hirai Momo</h3>
+                        <p>Gooey's matcha pistachio dessert is heaven! It's rich but not overpowering, and the
+                            craftsmanship is impeccable. Definitely ordering again for the holidays.</p>
+                    </div>
+                    <div class="review-card">
+                        <h3>Ma. Cathy Fukiko</h3>
+                        <p>The strawberry chocolate version is a must-try! The combination of flavors and textures
+                            is creative, and the quality of ingredients really shines. Highly recommend for
+                            dessert lovers.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FOOTER -->
+<footer class="text-center py-4">
+  <div class="footer-links mb-2">
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="menu.html">Menu</a> |
+    <a href="flavor-guide.html">Flavor Guide</a> |
+    <a href="faq.html">FAQs</a> |
+    <a href="order.html">Order</a> |
+    <a href="contact.html">Contact</a> |
+    <a href="dubai-signature.html">Best Sellers</a>
+  </div>
+  <p>Developed by Julia Tidalgo & Antonet Rillera</p>
+  <p style="opacity:0.5;font-size:10px;">© 2026 Gooey Cookie Co.</p>
+</footer>
+
+
+    </div>
+
+    <script>
+        const flavorInputs = document.querySelectorAll(".flavor-table input");
+        const totalEl = document.getElementById("total");
+        const prices = { original: 140, biscoff: 150, strawberry: 155, matcha: 165 };
+
+        function calculateTotal() {
+            let sum = 0;
+            flavorInputs.forEach(input => sum += input.value * prices[input.name]);
+            totalEl.textContent = sum;
+        }
+
+        flavorInputs.forEach(input => input.addEventListener("input", calculateTotal));
+
+        document.getElementById("orderForm").addEventListener("submit", function (e) {
+            const phone = this.contact.value;
+            if (!/^9\d{9}$/.test(phone)) {
+                alert("Phone number must be 10 digits starting with 9.");
+                e.preventDefault();
+                return;
+            }
+            e.preventDefault();
+            alert("Order placed successfully!");
+            this.reset();
+            calculateTotal();
+        });
+    </script>
+</body>
+
+</html>
